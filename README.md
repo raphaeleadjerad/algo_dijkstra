@@ -38,3 +38,7 @@ vous passez par le noeud 18
 vous passez par le noeud 24
 Vous etes arrives
 ```
+![Exemple de graphe](graphe.png)
+
+
+![Exemple de voyage](graphe9.png)
