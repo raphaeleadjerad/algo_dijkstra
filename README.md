@@ -20,3 +20,21 @@ si ce noeud a déjà été parcouru.
 Le second tableau est le "tableau des prédécesseurs", il est à une dimension
 et contient les prédécesseurs de chaque noeud: il s'agit du "noeud-père"
 qui précède le noeud en question dans le chemin parcouru.
+
+## Exemple de résultat 
+
+```
+Nous partons du noeud 0
+Ou voulez vous aller ? Entrez un noeud entre 0 et 25
+24
+Le cout total de votre trajet est :1464
+Vous passez par les noeuds
+7  18  12  6  0 
+Votre chemin est le suivant :
+vous passez par le noeud 0
+vous passez par le noeud 6
+vous passez par le noeud 12
+vous passez par le noeud 18
+vous passez par le noeud 24
+Vous etes arrives
+```
