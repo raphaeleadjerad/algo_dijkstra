@@ -1,0 +1,18 @@
+D'abord, cela pour plotter tous les points: 
+set title "Voyage dans l'espace - plus court chemin"
+set yrange [-0.2:1.2]
+set xrange [-0.2:1.2]
+splot \
+  'plot3.txt' using 1:2:3       with lines lc rgb "black" lw 1 notitle,\
+  'plot3.txt' using 1:2:3  with points palette pointsize 3.5 pointtype 7,\
+  'plot3.txt' using 1:2:3:4     with labels rgb "white" font 'Arial' notitle
+
+puis pour plotter le chemin précis choisi par l'algorithme 
+set title "Voyage dans l'espace - plus court chemin"
+set yrange [-0.2:1.2]
+set xrange [-0.2:1.2]
+splot \
+  "plot3.txt" using 1:2:3       with lines lc rgb "black" lw 1 notitle,\
+  "plot5.txt" using 1:2:3  with lines lc rgb "blue" lw 4 notitle,\
+  "plot5.txt" using 1:2:3  with points pointsize 5 pointtype 7,\
+  "plot5.txt" using 1:2:3:4     with labels rgb "white" font 'Arial' title "your path"
